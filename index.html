@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swami Swad Dairy - Purity, Health, and Taste</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="images/logo.png" alt="Swami Swaad Dairy Logo" />
+        <h1 class="logo-text">
+          स्वामी Swad Dairy<span class="logo-subtext"></span>
+        </h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Why Us</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="order-btn" id="navOrderBtn">Order Now</button>
+      <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+
+    <div class="slider-container">
+      <div
+        class="slide fade active"
+        style="background-image: url('images/cowbg (1).jpg')"
+      ></div>
+      <div
+        class="slide fade"
+        style="background-image: url('images/cowbg (2).jpg')"
+      ></div>
+      <div
+        class="slide fade"
+        style="background-image: url('images/cowbg (3).jpg')"
+      ></div>
+      <div
+        class="slide fade"
+        style="background-image: url('images/cowbg (4).jpg')"
+      ></div>
+      <div
+        class="slide fade"
+        style="background-image: url('images/cowbg (5).jpg')"
+      ></div>
+
+      <div class="slider-text">
+        <p class="tagline">Traditional Quality. Pure Nutrition.</p>
+        <h1 class="slider-h1">
+          Farm Fresh Dairy,
+          <span class="accent-color-text">Delivered Daily</span>
+        </h1>
+        <a href="#products" class="slider-cta-btn">Explore Products</a>
+      </div>
+
+      <div class="dots-container">
+        <span class="dot active" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+    </div>
+
+    <section class="welcome-section" id="home">
+      <div class="welcome-content">
+        <div class="welcome-text">
+          <p class="tagline">Experience the Difference in Taste</p>
+          <h2 class="h2">Welcome to <strong>Swami Swaad</strong> Dairy</h2>
+          <p>
+            We are dedicated to providing dairy products that meet the highest
+            standards of **Purity, Health, and Authentic Taste**. Our process is
+            rooted in ethical farming and minimal processing, ensuring that you
+            receive the best nature has to offer.
+          </p>
+          <div class="hero-actions">
+            <a href="#products" class="cta-btn">View All Products</a>
+            <a href="#contact" class="learn-btn">Request a Sample</a>
+          </div>
+        </div>
+        <div class="welcome-image">
+          <img
+            src="images/all_products.jpg"
+            alt="A premium display of all Swami Swaad dairy products"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <h2 class="h2">Why Our Customers Choose Us?</h2>
+      <div class="features-container">
+        <div class="feature-card">
+          <img src="images/purity.png" alt="Purity Icon" />
+          <h3 class="h3">100% Purity Guaranteed</h3>
+          <p>
+            Zero additives or preservatives. Just natural, wholesome nutrition
+            from happy, healthy cows.
+          </p>
+        </div>
+        <div class="feature-card">
+          <img src="images/fresh.png" alt="Freshness Icon" />
+          <h3 class="h3">Farm-to-Door Freshness</h3>
+          <p>
+            We ensure products are delivered within the shortest possible time
+            from the farm.
+          </p>
+        </div>
+        <div class="feature-card">
+          <img src="images/hygiene.png" alt="Hygiene Icon" />
+          <h3 class="h3">Certified Hygiene</h3>
+          <p>
+            Strict quality control and hygienic practices across all stages of
+            production and packaging.
+          </p>
+        </div>
+        <div class="feature-card">
+          <img src="images/ecology.png" alt="Ethical Icon" />
+          <h3 class="h3">Ethical Sourcing</h3>
+          <p>
+            We practice compassionate farming, ensuring the well-being and
+            natural diet of our herd.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="products">
+      <h2 class="h2">Our Premium Product Range</h2>
+      <div class="card-container">
+        <div class="card" data-product="milk" data-price="45" data-unit="Ltr">
+          <div class="image-wrapper">
+            <img src="images/new_milk_poket.jpg" alt="Fresh Cow Milk" />
+          </div>
+          <h3 class="h3">Fresh Cow Milk</h3>
+          <div class="rating">★★★★★</div>
+          <p>Rich in nutrients, ideal for the entire family's daily needs.</p>
+          <button class="order-product-btn">Order Now</button>
+        </div>
+        <div class="card" data-product="ghee" data-price="750" data-unit="Kg">
+          <div class="image-wrapper">
+            <img src="images/new_ghee.jpg" alt="Desi Ghee" />
+          </div>
+          <h3 class="h3">Traditional Desi Ghee</h3>
+          <div class="rating">★★★★★</div>
+          <p>
+            Made with the ancient Bilona method for authentic flavor and aroma.
+          </p>
+          <button class="order-product-btn">Order Now</button>
+        </div>
+        <div class="card" data-product="curd" data-price="40" data-unit="500g">
+          <div class="image-wrapper">
+            <img src="images/fresh_curd.jpg" alt="Natural Curd" />
+          </div>
+          <h3 class="h3">Homemade Style Curd</h3>
+          <div class="rating">★★★★☆</div>
+          <p>Thick, creamy, and probiotic-rich for excellent gut health.</p>
+          <button class="order-product-btn">Order Now</button>
+        </div>
+        <div class="card" data-product="paneer" data-price="250" data-unit="Kg">
+          <div class="image-wrapper">
+            <img src="images/paner.jpg" alt="Paneer" />
+          </div>
+          <h3 class="h3">Soft & Fresh Paneer</h3>
+          <div class="rating">★★★★★</div>
+          <p>Perfect texture for cooking, adds richness to any Indian dish.</p>
+          <button class="order-product-btn">Order Now</button>
+        </div>
+        <div
+          class="card"
+          data-product="lassi"
+          data-price="30"
+          data-unit="200ml"
+        >
+          <div class="image-wrapper">
+            <img src="images/lasi.jpg" alt="Lassi" />
+          </div>
+          <h3 class="h3">Classic Sweet Lassi</h3>
+          <div class="rating">★★★★☆</div>
+          <p>
+            Refreshing traditional yogurt drink, made with real ingredients.
+          </p>
+          <button class="order-product-btn">Order Now</button>
+        </div>
+        <div class="card" data-product="khoa" data-price="350" data-unit="Kg">
+          <div class="image-wrapper">
+            <img src="images/khoa.jpg" alt="Khoa" />
+          </div>
+          <h3 class="h3">Pure Mawa (Khoa)</h3>
+          <div class="rating">★★★★★</div>
+          <p>Dense milk solids perfect for making festive Indian sweets.</p>
+          <button class="order-product-btn">Order Now</button>
+        </div>
+        <div
+          class="card hidden-product"
+          data-product="butter"
+          data-price="100"
+          data-unit="250g"
+        >
+          <div class="image-wrapper">
+            <img src="images/fresh_butter.jpg" alt="Butter" />
+          </div>
+          <h3 class="h3">Fresh White Butter</h3>
+          <div class="rating">★★★★☆</div>
+          <p>Unsalted, natural, and creamy. Perfect for bread and cooking.</p>
+          <button class="order-product-btn">Order Now</button>
+        </div>
+        <div
+          class="card hidden-product"
+          data-product="chhach"
+          data-price="20"
+          data-unit="500ml"
+        >
+          <div class="image-wrapper">
+            <img src="images/fress_milk.jpg" alt="Chhach" />
+          </div>
+          <h3 class="h3">Spiced Buttermilk (Chhach)</h3>
+          <div class="rating">★★★★★</div>
+          <p>
+            Cooling and digestive drink with light spices. A summer essential.
+          </p>
+          <button class="order-product-btn">Order Now</button>
+        </div>
+      </div>
+      <button class="view-more-btn" id="viewMoreProductsBtn">
+        Explore All Products
+      </button>
+    </section>
+
+    <section id="team" class="team">
+      <h2 class="h2">Meet Our Dedicated Leadership</h2>
+      <div class="team-cards">
+        <div class="team-card">
+          <img src="images/monu_new.jpg" alt="Monu, Owner" />
+          <h3 class="h3">Monu</h3>
+          <p class="role">Owner & Visionary</p>
+          <p>
+            Committed to maintaining the traditional standards of purity and
+            quality.
+          </p>
+        </div>
+        <div class="team-card">
+          <img src="images/sonu.jpg" alt="Sonu, CEO" />
+          <h3 class="h3">Sonu</h3>
+          <p class="role">CEO & Operations Head</p>
+          <p>
+            Ensures smooth daily operations and guaranteed customer
+            satisfaction.
+          </p>
+        </div>
+        <div class="team-card">
+          <img src="images/dhanu_new.jpg" alt="Dhanu, Founder" />
+          <h3 class="h3">Dhanu</h3>
+          <p class="role">Founder & Quality Assurance</p>
+          <p>
+            The originator of our ethical farming practices and quality control
+            standards.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <img src="images/fram.jpg" alt="Dairy Farm" />
+      <div class="about-content">
+        <h2 class="h2">Our Journey to Purity</h2>
+        <p>
+          Swami Swaad Dairy began with a commitment to bring the **purest form
+          of milk** and dairy products from our happy farm directly to your
+          home. We oversee every step, from the natural diet of our cows to the
+          final packaging, ensuring transparency and trust.
+        </p>
+        <h3 class="h3">Our Core Offerings Include:</h3>
+        <div class="product-list">
+          <ul>
+            <li>Fresh Cow Milk</li>
+            <li>Desi Ghee (Bilona)</li>
+            <li>Natural Curd</li>
+          </ul>
+          <ul>
+            <li>Fresh Paneer</li>
+            <li>Lassi & Chhach</li>
+            <li>Seasonal Dairy Sweets</li>
+          </ul>
+        </div>
+        <p class="call-to-action">
+          Join the thousands of families who trust Swami Swaad for their daily
+          nutrition.
+        </p>
+      </div>
+    </section>
+
+    <section id="reviews" class="reviews">
+      <h2 class="h2">Trusted by Thousands of Families</h2>
+      <div class="reviews-container">
+        <div class="review-card">
+          <img src="images/farmer.jpg" alt="Ravi Kumar" />
+          <h3 class="h3">Ravi Kumar</h3>
+          <div class="rating">★★★★★</div>
+          <p>
+            "The milk is truly excellent. The quality is consistent and the
+            taste is remarkably pure. My family is very happy."
+          </p>
+        </div>
+        <div class="review-card">
+          <img src="images/priyanka.jpg" alt="Priya Sharma" />
+          <h3 class="h3">Priya Sharma</h3>
+          <div class="rating">★★★★★</div>
+          <p>
+            "The Desi Ghee is top-notch! The aroma and granular texture prove
+            its authenticity. Highly recommend this brand."
+          </p>
+        </div>
+        <div class="review-card">
+          <img src="images/dadaji.jpg" alt="Dada ji" />
+          <h3 class="h3">Dada ji</h3>
+          <div class="rating">★★★★☆</div>
+          <p>
+            "Prompt delivery and great service. Their Paneer is incredibly soft,
+            making it perfect for all my recipes."
+          </p>
+        </div>
+        <div class="review-card hidden-review">
+          <img src="images/neha_verma2.jpg" alt="Neha Verma" />
+          <h3 class="h3">Neha Verma</h3>
+          <div class="rating">★★★★★</div>
+          <p>
+            "I appreciate the ethical treatment of their cows. Knowing where my
+            milk comes from adds so much value."
+          </p>
+        </div>
+      </div>
+      <button class="view-more-btn" id="loadMoreReviews">
+        Load More Reviews
+      </button>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2 class="h2">Have Questions? Get In Touch</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <input
+          type="tel"
+          id="phone"
+          placeholder="Your Phone Number (Optional)"
+        />
+        <textarea
+          id="message"
+          rows="5"
+          placeholder="Your Message or Order Inquiry"
+        ></textarea>
+        <button type="submit" class="cta-btn">Send Message</button>
+      </form>
+    </section>
+
+    <footer class="main-footer">
+      <div class="footer-content">
+        <div class="footer-section footer-address">
+          <h4>📍 Address & Location</h4>
+          <p class="address-line">
+            Swami Swad Dairy, Naya Bajar Hajpurwa,<br />
+            Siwan (Bihar), Pin Code 841241
+          </p>
+        </div>
+
+        <div class="footer-section footer-contact-info">
+          <h4>📞 Contact Information</h4>
+          <p>
+            <i class="fas fa-envelope"></i> Email:
+            <a href="mailto:mk4473200@gmail.com">mk4473200@gmail.com</a>
+          </p>
+          <p>
+            <i class="fas fa-phone-alt"></i> Phone:
+            <a href="tel:+917369879343">+91 73698 79343</a>
+          </p>
+          <p>
+            <i class="fas fa-mobile-alt"></i> Secondary Phone:
+            <a href="tel:+917369879341">+91 73698 79341</a>
+          </p>
+        </div>
+
+        <div class="footer-section social-icons-footer">
+          <h4>Follow Us</h4>
+          <a
+            href="http://facebook.com/profile.php?id=100049635426034"
+            target="_blank"
+            title="Facebook"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/mr_sonu__0073?igsh=c2diOHdtajF4Ync4"
+            target="_blank"
+            title="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            id="whatsappFooterLink"
+            href="https://wa.me/917369879341"
+            target="_blank"
+            title="WhatsApp"
+          >
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="team-footer">
+          <span class="team-member">Owner: Monu</span> |
+          <span class="team-member">Founder: Dhanu</span> |
+          <span class="team-member">CEO: Sonu</span>
+        </div>
+        <p class="copyright">
+          &copy; 2025 Swami Swaad Dairy. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <div id="orderModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h3 id="modalProductName" class="modal-h3"></h3>
+        <p class="modal-price-display">
+          Price per Unit: <span id="modalProductPrice"></span>
+        </p>
+
+        <form id="orderFormModal">
+          <input type="hidden" id="modalProductSKU" name="sku" />
+          <input type="hidden" id="modalProductUnitPrice" name="unitPrice" />
+
+          <label for="quantity">Quantity:</label>
+          <div class="quantity-control">
+            <button type="button" id="qtyMinus">-</button>
+            <input
+              type="number"
+              id="quantity"
+              name="quantity"
+              value="1"
+              min="1"
+              required
+            />
+            <button type="button" id="qtyPlus">+</button>
+          </div>
+
+          <input
+            type="text"
+            id="customerName"
+            placeholder="Your Full Name"
+            required
+          />
+          <textarea
+            id="customerAddress"
+            rows="3"
+            placeholder="Delivery Address"
+            required
+          ></textarea>
+          <input
+            type="tel"
+            id="customerPhone"
+            placeholder="Your Mobile Number (10 digits)"
+            pattern="[0-9]{10}"
+            required
+          />
+
+          <label for="paymentMethod">Payment Method:</label>
+          <select id="paymentMethod" name="paymentMethod" required>
+            <option value="" disabled selected>Select Payment Option</option>
+            <option value="cod">Cash On Delivery (COD)</option>
+            <option value="upi">UPI/Online Payment</option>
+          </select>
+
+          <div class="upi-details" id="upiDetailsDisplay" style="display: none">
+            <h4 class="h4">Instant Payment via UPI</h4>
+            <img
+              src="images/QR_CODE_MONU.jpg"
+              alt="UPI QR Code"
+              style="
+                width: 150px;
+                height: 150px;
+                margin: 10px auto;
+                display: block;
+                border: 1px solid #ccc;
+              "
+            />
+            <p>UPI ID: <strong>Paytm 7369879341@ptyes</strong></p>
+            <p class="upi-note">
+              (Please make payment after confirming the order on WhatsApp)
+            </p>
+          </div>
+
+          <p class="total-price-display">
+            Total Payable: <span id="modalTotalPrice">₹0.00</span>
+          </p>
+
+          <button type="submit" class="cta-btn submit-order-btn">
+            Confirm Order (via WhatsApp)
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="whatsapp-chat-box" id="whatsappChatBox">
+      <div class="chat-header">
+        <h4>Chat with Swami Swaad Dairy</h4>
+        <span class="close-whatsapp-btn">&times;</span>
+      </div>
+      <textarea
+        id="whatsappMessageInput"
+        placeholder="Type your inquiry or custom order message here..."
+        rows="3"
+      ></textarea>
+      <button id="sendWhatsAppBtn" class="cta-btn">Send on WhatsApp</button>
+    </div>
+
+    <div class="whatsapp-float-icon" id="whatsappFloatIcon">
+      <i class="fab fa-whatsapp"></i>
+    </div>
+
+    <a
+      href="https://wa.me/917369879341"
+      class="whatsapp-float-icon-mobile"
+      target="_blank"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="index.js"></script>
+  </body>
+</html>
