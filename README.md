@@ -27,7 +27,3 @@ Promote sustainability through eco-friendly packaging
 
 “Every drop of milk from Swami Swad Dairy is a drop of purity, honesty, and Indian tradition.”
 
-
----
-
-Kya aap chahte ho main is version ko README.md ke format me ready karke du (GitHub pe direct upload karne ke liye)?
